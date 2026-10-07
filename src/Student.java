@@ -9,6 +9,10 @@ public class Student {
         this.studentName = studentName;
         this.department = department;
     }
+    
+    public String getStudentName() {
+    return studentName;
+}
 
     public void displayStudent() {
         System.out.println("Student ID: " + studentID);

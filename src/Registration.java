@@ -1,4 +1,5 @@
 
+
 public class Registration {
     private Student student;
     private Course course;
@@ -21,5 +22,12 @@ public class Registration {
         System.out.println("Course Information");
         System.out.println("------------------");
         course.displayCourse();
+
+        System.out.println();
+        System.out.println("Registration Confirmation");
+        System.out.println("=========================");
+        System.out.println("Registration successful!");
+        System.out.println("Student " + student.getStudentName()
+                + " has been registered for the course.");
     }
 }
