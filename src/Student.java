@@ -1,28 +1,18 @@
+
 public class Student {
+    private String studentID;
+    private String studentName;
+    private String department;
 
-    private String name;
-    private int rollNo;
-    private double average;
-
-    public Student(
-            String name,
-            int rollNo,
-            double average) {
-
-        this.name = name;
-        this.rollNo = rollNo;
-        this.average = average;
+    public Student(String studentID, String studentName, String department) {
+        this.studentID = studentID;
+        this.studentName = studentName;
+        this.department = department;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getRollNo() {
-        return rollNo;
-    }
-
-    public double getAverage() {
-        return average;
+    public void displayStudent() {
+        System.out.println("Student ID: " + studentID);
+        System.out.println("Student Name: " + studentName);
+        System.out.println("Department: " + department);
     }
 }
